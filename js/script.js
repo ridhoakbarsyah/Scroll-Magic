@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $(".slider").slick({
-    dots: true, // Menampilkan navigasi titik-titik
-    autoplay: true, // Otomatis berputar
-    autoplaySpeed: 2000, // Kecepatan putaran dalam milidetik (ms)
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 });
 
