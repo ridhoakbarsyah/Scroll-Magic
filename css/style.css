@@ -1,0 +1,534 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* responsive */
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+/* Media queries untuk layar dengan lebar maksimum 768px */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column; /* Mengubah orientasi menu saat layar menjadi vertikal */
+  }
+
+  .navbar-item {
+    margin: 10px 0; /* Mengubah margin pada item menu untuk tata letak yang lebih kompak */
+  }
+
+  /* Aturan CSS lainnya untuk responsif */
+}
+
+/* Media queries untuk layar dengan lebar maksimum 480px */
+@media screen and (max-width: 480px) {
+  .navbar-item {
+    font-size: 14px; /* Mengubah ukuran font pada item menu untuk tata letak yang lebih kecil */
+  }
+
+  /* Lebih banyak perubahan tata letak di sini */
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* warna latar belakang navbar */
+}
+
+.logo-container img {
+  width: 200px; /* sesuaikan ukuran sesuai kebutuhan */
+  height: auto;
+}
+
+.navbar {
+  background-color: #ff2323; /* warna latar belakang navbar */
+  padding: 10px 20px;
+  color: #fff; /* warna teks navbar */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff2323; /* warna latar belakang navbar */
+  padding: 10px 20px;
+  color: #fff; /* warna teks navbar */
+  display: flex;
+  justify-content: center; /* untuk menengahkan menu */
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px; /* jarak antar item navbar */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff; /* warna teks link */
+  font-weight: bold; /* ketebalan teks */
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center; /* untuk mengatur ikon dan teks secara vertikal */
+  font-size: 18px; /* ukuran font */
+}
+
+.navbar-link .fas {
+  margin-right: 150px; /* jarak antara ikon dan teks */
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333; /* warna latar belakang dropdown */
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff; /* warna teks dropdown */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555; /* warna latar belakang saat hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Tanda panah untuk dropdown */
+.dropdown-arrow {
+  margin-left: 5px;
+}
+
+.bread-crumb.container {
+  margin-top: 20px; /* Jarak antara breadcrumb dan navbar */
+  margin-bottom: 20px;
+}
+
+.list-breadCrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-breadCrumb .list-item {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+}
+
+.list-breadCrumb .list-item.active a {
+  font-weight: bold;
+}
+
+.list-breadCrumb .list-item a {
+  text-decoration: none;
+  color: #a7a7a7; /* Warna font default */
+  font-size: 16px; /* Ukuran font default */
+}
+
+.list-breadCrumb .list-item a:hover {
+  color: red; /* Warna font saat dihover menjadi merah */
+}
+
+/* CSS untuk ikon panah */
+.list-breadCrumb .list-item span {
+  color: #999;
+  margin: 0 5px; /* Jarak antara ikon panah dan teks */
+}
+
+/* CSS untuk membuat warna teks menjadi abu-abu */
+#banner-product-detail .product-heading-title-center {
+  color: #777; /* Warna abu-abu untuk teks */
+}
+
+#banner-product-detail {
+  margin-top: 20px; /* Spasi di atas elemen */
+  margin-bottom: 20px; /* Spasi di bawah elemen */
+}
+
+.single-img-banner {
+  padding: 20px; /* Spasi di dalam elemen */
+}
+
+#banner-area {
+  margin-left: 20px; /* Tambahkan nilai margin kiri sesuai dengan kebutuhan */
+}
+
+.single-img-banner {
+  text-align: center; /* Mengatur tata letak gambar ke tengah */
+}
+
+.single-img-banner img {
+  width: 100%; /* Mengubah maksimum lebar gambar menjadi 100% dari parent */
+  height: auto; /* Mengatur ketinggian gambar agar tetap proporsional */
+}
+
+.slider img {
+  width: auto; /* Mengubah lebar gambar menjadi otomatis untuk menyesuaikan ketinggian slider */
+  height: 100%; /* Mengatur ketinggian gambar menjadi 100% dari parent */
+}
+
+.product-heading-title-center {
+  font-size: 14px; /* Ubah nilai sesuai dengan kebutuhan Anda */
+}
+
+/* Slider */
+.slider {
+  width: 80%; /* Sesuaikan lebar slider sesuai kebutuhan */
+  margin: 0 auto; /* Untuk membuat slider berada di tengah */
+}
+
+.slider img {
+  width: 100%; /* Agar gambar selalu terisi di dalam slider */
+}
+
+#simulasi-kredit-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Atur jarak dengan footer */
+}
+
+.sk-btn-wrapper {
+  max-width: 600px; /* Atur lebar maksimum */
+  width: 100%; /* Memastikan elemen berada dalam lebar maksimum */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ccc; /* Garis tipis */
+}
+
+.sk-btn-wrapper h1 {
+  margin-bottom: 10px;
+}
+
+.sk-btn-wrapper a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sk-btn-wrapper a:hover {
+  background-color: #ff0000;
+}
+
+.product {
+  background-color: #f7f7f7; /* Warna latar belakang */
+  padding: 50px 0; /* Padding di atas dan bawah */
+}
+
+.product-container {
+  text-align: center; /* Membuat teks dan slider menjadi rata tengah */
+}
+
+.product-container h1 {
+  color: #333; /* Warna teks judul */
+  margin-bottom: 30px; /* Spasi antara judul dan slider */
+}
+
+.slider {
+  width: 40%; /* Lebar slider */
+  margin: 0 auto; /* Membuat slider berada di tengah */
+}
+
+.slider img {
+  width: 50%; /* Membuat gambar tidak melebihi lebar slider */
+}
+
+.feature {
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak elemen ke arah vertikal */
+  align-items: center; /* Mengatur elemen agar berada di tengah-tengah secara horizontal */
+}
+
+.feature-container {
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+  margin-bottom: 10px; /* Menambahkan jarak bawah */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 50%; /* Pastikan gambar tidak melebihi lebar container */
+}
+
+.accessories {
+  position: relative;
+}
+
+.accessories .slider {
+  margin-bottom: 20px; /* Atur margin bottom agar ada jarak antara gambar dan tombol */
+}
+
+.accessories-container {
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.table-container {
+  overflow-x: auto; /* Mengaktifkan scroll horizontal jika tabel terlalu lebar */
+}
+
+.data-table {
+  width: 100%; /* Mengatur lebar tabel menjadi 100% dari container */
+  border-collapse: collapse; /* Menggabungkan batas sel */
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ccc; /* Menambahkan garis pemisah */
+  padding: 10px; /* Menambahkan ruang di sekitar teks */
+  text-align: center; /* Mengatur agar teks berada di tengah */
+}
+
+.data-table th {
+  background-color: #f2f2f2; /* Warna latar belakang untuk header */
+  font-weight: bold; /* Membuat teks pada header menjadi tebal */
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Warna latar belakang untuk baris genap */
+}
+
+.data-table tbody tr:hover {
+  background-color: #e9e9e9; /* Warna latar belakang untuk baris saat dihover */
+}
+
+.dealer-container {
+  text-align: center; /* Mengatur teks agar rata tengah */
+}
+
+.dealer-container a {
+  display: inline-block; /* Mengubah link menjadi elemen blok */
+  margin: 0 10px; /* Memberi jarak antara tombol */
+  padding: 10px 20px; /* Memberi padding pada tombol */
+  background-color: #000; /* Latar belakang hitam */
+  color: #fff; /* Teks putih */
+  text-decoration: none;
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+}
+
+.dealer-container a:hover {
+  background-color: red; /* Efek hover berubah menjadi merah */
+}
+
+.recomended-product {
+  padding-top: 20px; /* Tambahkan spasi atas */
+  padding-bottom: 20px; /* Tambahkan spasi bawah */
+  text-align: center; /* Ratakan teks di tengah */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Buat 3 kolom dengan lebar yang sama */
+  gap: 20px; /* Tambahkan jarak antara grid item */
+  padding: 20px; /* Tambahkan padding untuk grid container */
+}
+
+.grid-item {
+  background-color: #f0f0f0; /* Warna latar belakang item grid */
+  padding: 20px; /* Tambahkan padding pada item grid */
+  border: 1px solid #ccc; /* Tambahkan border pada item grid */
+  border-radius: 5px; /* Membuat sudut item grid melengkung */
+  text-align: center; /* Ratakan teks di tengah item grid */
+}
+
+.grid-item img {
+  max-width: 100%; /* Pastikan gambar tidak melebihi lebar item grid */
+  height: auto; /* Jaga aspek rasio gambar */
+  border-radius: 5px; /* Membuat sudut gambar melengkung */
+}
+
+.grid-item p {
+  margin-top: 10px; /* Tambahkan jarak atas untuk teks di bawah gambar */
+  font-size: 16px; /* Ukuran font untuk teks */
+  color: #333; /* Warna teks */
+}
+
+.product-info {
+  text-align: left; /* Membuat teks menjadi rata kiri */
+}
+
+.product-info h1,
+.product-info p,
+.product-info button {
+  margin: 0 0 10px 0; /* Tambahkan margin bawah untuk spasi antar elemen */
+}
+
+/* Opsional: Tambahkan gaya untuk tombol agar terlihat lebih menarik */
+.product-info button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Warna latar belakang tombol */
+  color: #000000; /* Warna teks tombol */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-info button:hover {
+  background-color: #ffffff; /* Warna latar belakang tombol saat dihover */
+}
+
+.lainnya-container {
+  text-align: center; /* Mengatur teks agar rata tengah */
+  margin-bottom: 20px;
+}
+
+.lainnya-container a {
+  display: inline-block; /* Mengubah link menjadi elemen blok */
+  margin: 0 10px; /* Memberi jarak antara tombol */
+  padding: 10px 20px; /* Memberi padding pada tombol */
+  background-color: #000; /* Latar belakang hitam */
+  color: #fff; /* Teks putih */
+  text-decoration: none;
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+}
+
+.lainnya-container a:hover {
+  background-color: red; /* Efek hover berubah menjadi merah */
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Membuat teks rata tengah */
+  margin-top: 10px; /* Menambahkan spasi di atas footer */
+}
+
+.footer-top {
+  padding: 20px;
+}
+.footer-bottom {
+  text-align: center; /* Membuat teks menjadi rata tengah */
+  background-color: #222;
+  padding: 10px;
+}
+
+.footer-bottom a {
+  color: #ccc; /* Warna teks abu-abu */
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrap-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo-brand-footer {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.row-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 1 100%;
+}
+.col-grid-30 {
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+.wrap-col-footer,
+.wrap-newsletter,
+.wrap-footAddress {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Menambahkan spasi di bawah kotak-kotak */
+  margin: 0 10px 20px 10px; /* Menambahkan spasi di sisi kanan dan kiri */
+}
+
+.list-footerMenu {
+  list-style: none;
+  padding: 0;
+}
+.menus-item .title {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: block;
+}
+.item-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item-menu li {
+  margin-bottom: 5px;
+}
+.item-menu a {
+  color: #ddd;
+  text-decoration: none;
+}
+.item-menu a:hover {
+  text-decoration: underline;
+}
+.tx-white {
+  color: #fff;
+}
+.btn-submit {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.btn-submit:hover {
+  background-color: #c00;
+}
